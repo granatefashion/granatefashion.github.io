@@ -4,28 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Granate Fashion</title>
+
+  <!-- Google Fonts para estilo más elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background:#f6eff7; color:#333; }
-    header { text-align:center; padding:30px 20px; background: linear-gradient(180deg,#e9d6f0,#f6eff7); }
-    header img { max-width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.08); }
-    h1 { margin:15px 0 5px; font-size:32px; color:#6a2c91; }
-    .subtitle { color:#7a4b8e; }
-    nav { text-align:center; padding:12px; background:#eadcf3; }
-    nav a { margin:0 12px; text-decoration:none; color:#5b2b7a; font-weight:600; }
-    .container { padding:30px 20px; max-width:1100px; margin:auto; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
-    .card { background:#fff; padding:18px; border-radius:14px; box-shadow:0 6px 15px rgba(0,0,0,0.08); }
-    .card h3 { margin-top:0; color:#6a2c91; }
-    .btn { display:inline-block; margin-top:10px; padding:10px 16px; background:#c084d4; color:#fff; border-radius:8px; text-decoration:none; }
-    footer { text-align:center; padding:20px; background:#e9d6f0; margin-top:30px; font-size:14px; }
+    body {
+      margin:0;
+      font-family: 'Poppins', sans-serif;
+      background:#f6eff7;
+      color:#4b2e57;
+    }
+
+    header {
+      text-align:center;
+      padding:40px 20px;
+      background: linear-gradient(180deg,#e9d6f0,#f6eff7);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size:36px;
+      color:#6a2c91;
+      margin-bottom:5px;
+    }
+
+    .subtitle {
+      color:#7a4b8e;
+      font-size:16px;
+    }
+
+    nav {
+      text-align:center;
+      padding:14px;
+      background:#eadcf3;
+      position: sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a {
+      margin:0 12px;
+      text-decoration:none;
+      color:#5b2b7a;
+      font-weight:600;
+    }
+
+    .hero {
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 20px;
+      background:#a45acb;
+      color:#fff;
+      border-radius:25px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      background:#7a4b8e;
+    }
+
+    .container {
+      padding:40px 20px;
+      max-width:1100px;
+      margin:auto;
+      text-align:center;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color:#6a2c91;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .card {
+      background:#fff;
+      padding:18px;
+      border-radius:16px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-5px);
+    }
+
+    .card img {
+      width:100%;
+      border-radius:12px;
+      margin-bottom:10px;
+    }
+
+    footer {
+      text-align:center;
+      padding:25px;
+      background:#e9d6f0;
+      margin-top:40px;
+      font-size:14px;
+    }
+
+    /* Botón flotante WhatsApp */
+    .whatsapp {
+      position: fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:12px 18px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="banner.jpg" alt="Granate Fashion">
   <h1>Granate Fashion</h1>
-  <p class="subtitle">Accesorios hechos a mano, hechos con amor 💜</p>
+  <p class="subtitle">Accesorios personalizados hechos a mano 💜</p>
 </header>
 
 <nav>
@@ -35,44 +150,54 @@
   <a href="#contacto">Contacto</a>
 </nav>
 
-<div class="container" id="inicio">
-  <h2>Bienvenida</h2>
-  <p>En Granate Fashion creamos accesorios únicos y personalizados pensados para acompañarte en cada momento. Cada producto está hecho a mano con dedicación, cariño y mucho estilo ✨</p>
-  <a class="btn" href="#tienda">Ver tienda</a>
-</div>
+<section class="hero">
+  <h2>Diseños únicos hechos con amor</h2>
+  <p>Personaliza tus accesorios y hazlos únicos ✨</p>
+  <a class="btn" href="#tienda">Ver productos</a>
+</section>
 
 <div class="container" id="tienda">
-  <h2>Productos</h2>
+  <h2>Productos Destacados</h2>
   <div class="grid">
+
     <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Lazos">
       <h3>🎀 Lazos Coquette</h3>
-      <p>Lazos delicados y femeninos, hechos a mano con distintos colores y estilos.</p>
+      <p>Elegantes y delicados, ideales para cualquier ocasión.</p>
     </div>
+
     <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Estuches">
       <h3>🧵 Estuches Sublimados</h3>
-      <p>Estuches personalizados ideales para maquillaje o útiles.</p>
+      <p>Personalizados con nombres y diseños únicos.</p>
     </div>
+
     <div class="card">
-      <h3>👜 Bolsos y Accesorios</h3>
-      <p>Bolsos prácticos, resistentes y con diseños únicos.</p>
+      <img src="https://via.placeholder.com/300x200" alt="Bolsos">
+      <h3>👜 Bolsos & Accesorios</h3>
+      <p>Prácticos, resistentes y con mucho estilo.</p>
     </div>
+
   </div>
 </div>
 
 <div class="container" id="sobre">
-  <h2>Sobre Granate Fashion</h2>
-  <p>Somos un emprendimiento dedicado a crear productos hechos a mano con amor. Cada diseño es único, pensado para resaltar tu estilo y personalidad 💜</p>
+  <h2>Sobre nosotros</h2>
+  <p>En Granate Fashion creamos productos hechos a mano con dedicación y cariño. Cada pieza es única, pensada para reflejar tu estilo 💜</p>
 </div>
 
 <div class="container" id="contacto">
   <h2>Contacto</h2>
-  <p>📱 WhatsApp: +56 9 7640 1364</p>
-  <p>📷 Instagram: @GranateFashion</p>
+  <p>📱 +56 9 7640 1364</p>
+  <p>📷 @GranateFashion</p>
 </div>
 
 <footer>
-  <p>© Granate Fashion - Todos los derechos reservados</p>
+  <p>© 2024 Granate Fashion - Todos los derechos reservados</p>
 </footer>
+
+<!-- Botón WhatsApp -->
+<a class="whatsapp" href="https://wa.me/56976401364" target="_blank">WhatsApp</a>
 
 </body>
 </html>
