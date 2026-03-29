@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Granate Fashion</title>
 
-  <!-- Google Fonts para estilo más elegante -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -26,12 +25,10 @@
       font-family: 'Playfair Display', serif;
       font-size:36px;
       color:#6a2c91;
-      margin-bottom:5px;
     }
 
     .subtitle {
       color:#7a4b8e;
-      font-size:16px;
     }
 
     nav {
@@ -40,7 +37,6 @@
       background:#eadcf3;
       position: sticky;
       top:0;
-      z-index:1000;
     }
 
     nav a {
@@ -55,12 +51,6 @@
       padding:60px 20px;
     }
 
-    .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size:28px;
-      margin-bottom:10px;
-    }
-
     .btn {
       display:inline-block;
       margin-top:15px;
@@ -69,11 +59,6 @@
       color:#fff;
       border-radius:25px;
       text-decoration:none;
-      transition:0.3s;
-    }
-
-    .btn:hover {
-      background:#7a4b8e;
     }
 
     .container {
@@ -109,8 +94,9 @@
 
     .card img {
       width:100%;
+      height:200px;
+      object-fit:cover;
       border-radius:12px;
-      margin-bottom:10px;
     }
 
     footer {
@@ -118,10 +104,8 @@
       padding:25px;
       background:#e9d6f0;
       margin-top:40px;
-      font-size:14px;
     }
 
-    /* Botón flotante WhatsApp */
     .whatsapp {
       position: fixed;
       bottom:20px;
@@ -132,7 +116,18 @@
       border-radius:30px;
       text-decoration:none;
       font-weight:bold;
-      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .instagram {
+      position: fixed;
+      bottom:80px;
+      right:20px;
+      background:#E1306C;
+      color:white;
+      padding:12px 16px;
+      border-radius:50%;
+      text-decoration:none;
+      font-size:20px;
     }
   </style>
 </head>
@@ -146,58 +141,67 @@
 <nav>
   <a href="#inicio">Inicio</a>
   <a href="#tienda">Tienda</a>
-  <a href="#sobre">Sobre nosotros</a>
   <a href="#contacto">Contacto</a>
 </nav>
 
-<section class="hero">
+<section class="hero" id="inicio">
   <h2>Diseños únicos hechos con amor</h2>
-  <p>Personaliza tus accesorios y hazlos únicos ✨</p>
+  <p>Personaliza tus accesorios ✨</p>
   <a class="btn" href="#tienda">Ver productos</a>
 </section>
 
 <div class="container" id="tienda">
-  <h2>Productos Destacados</h2>
+  <h2>Productos</h2>
+
   <div class="grid">
 
+    <a href="lazos.html" style="text-decoration:none; color:inherit;">
+      <div class="card">
+        <img src="imagenes/lazos.jpg" alt="Lazos">
+        <h3>🎀 Lazos Coquette</h3>
+        <p>Haz clic para ver modelos, precios y detalles</p>
+      </div>
+    </a>
+
     <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Lazos">
-      <h3>🎀 Lazos Coquette</h3>
-      <p>Elegantes y delicados, ideales para cualquier ocasión.</p>
+      <img src="imagenes/estuches.jpg" alt="Estuches">
+      <h3>🧵 Estuches</h3>
+      <p>Próximamente</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Estuches">
-      <h3>🧵 Estuches Sublimados</h3>
-      <p>Personalizados con nombres y diseños únicos.</p>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Bolsos">
-      <h3>👜 Bolsos & Accesorios</h3>
-      <p>Prácticos, resistentes y con mucho estilo.</p>
+      <img src="imagenes/bolsos.jpg" alt="Bolsos">
+      <h3>👜 Bolsos</h3>
+      <p>Próximamente</p>
     </div>
 
   </div>
 </div>
 
-<div class="container" id="sobre">
-  <h2>Sobre nosotros</h2>
-  <p>En Granate Fashion creamos productos hechos a mano con dedicación y cariño. Cada pieza es única, pensada para reflejar tu estilo 💜</p>
-</div>
-
 <div class="container" id="contacto">
   <h2>Contacto</h2>
+
   <p>📱 +56 9 7640 1364</p>
-  <p>📷 @GranateFashion</p>
+
+  <p>
+    📷 
+    <a href="https://instagram.com/GranateFashion" target="_blank">
+      @GranateFashion
+    </a>
+  </p>
+
 </div>
 
 <footer>
-  <p>© 2024 Granate Fashion - Todos los derechos reservados</p>
+  <p>© 2024 Granate Fashion</p>
 </footer>
 
-<!-- Botón WhatsApp -->
+<!-- Botones flotantes -->
 <a class="whatsapp" href="https://wa.me/56976401364" target="_blank">WhatsApp</a>
+
+<a class="instagram" href="https://instagram.com/GranateFashion" target="_blank">
+  📷
+</a>
 
 </body>
 </html>
